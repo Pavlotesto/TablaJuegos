@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejemplo de tabla con contenido CSS</title>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+<h2>FlexBox Defense</h2>
+
+<table>
+    <thead>
+        <tr>
+          <th>No.</th>
+          <th>Comando</th>
+          <th>Explicación</th>
+        </tr>
+      </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>justify-content: center;</td>
+      <td>justify-content: center;: Este comando se utiliza en CSS dentro de un contenedor flexbox para alinear los elementos hijos horizontalmente en el centro del contenedor.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>justify-content: flex-end; <br>
+     justify-content: center;<br>
+     justify-content: flex-end;</td>
+
+     <td>justify-content: flex-end;: Con esta propiedad, los elementos flexibles se alinean al final del contenedor a lo largo del eje principal. En este caso, al ser seguido por justify-content: center; y nuevamente justify-content: flex-end;, se puede entender como una instrucción para que los elementos primero se alineen al final del contenedor, luego en el centro, y finalmente de nuevo al final.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>justify-content: center; <br>
+        justify-content: space-between;</td>
+        <td>justify-content: center; justify-content: space-between;: Aquí, primero se alinean los elementos en el centro y luego se distribuyen uniformemente con el espacio restante entre ellos.</td>
+    </tr>
+    <tr>      
+      <td>4</td>
+      <td>align-items: flex-end; <br>
+      justify-content: center;</td>
+      <td>align-items: flex-end; justify-content: center;: Este conjunto de comandos primero alinea los elementos secundarios verticalmente en la parte inferior del contenedor y luego los alinea horizontalmente en el centro.</td>
+    </tr>
+    <tr>
+        <td>5</td>
+      <td>justify-content: space-around; <br>
+        align-items: flex-end; <br>
+        justify-content: center; <br>
+        justify-content: center;</td>
+        <td>justify-content: space-around; align-items: flex-end; justify-content: center; justify-content: center;: Primero, los elementos se distribuyen uniformemente con espacios iguales alrededor de ellos. Luego se alinean verticalmente en la parte inferior del contenedor, y después se alinean horizontalmente en el centro dos veces.</td>
+    </tr>
+    <tr>
+        <td>6</td>
+      <td>justify-content: space-between; <br>
+          align-items: center;</td>
+          <td>justify-content: space-between; align-items: center;: Los elementos se distribuyen uniformemente con el primer elemento al principio del contenedor y el último elemento al final del contenedor. Además, se alinean verticalmente en el centro del contenedor.</td>
+    </tr>
+    <tr>
+        <td>7</td>
+      <td>flex-direction: column; <br>
+          flex-direction: column;</td>
+          <td>flex-direction: column; flex-direction: column;: Estos dos comandos establecen la dirección de los elementos secundarios como columnas en dos lugares diferentes. Este estilo es útil cuando quieres que los elementos se apilen verticalmente en lugar de horizontalmente.</td>
+    </tr>
+    <tr>
+        <td>8</td>
+      <td>flex-direction: column; <br>
+      align-items: center; <br>
+      flex-direction: column;</td>
+      <td>flex-direction: column; align-items: center; flex-direction: column;: Primero, establece la dirección de los elementos secundarios como columnas y luego los alinea horizontalmente en el centro en dos ocasiones.</td>
+    </tr>
+    <tr>
+        <td>9</td>
+      <td>justify-content: space-around; <br>
+      flex-direction: row-reverse; <br>
+      flex-direction: row-reverse; <br>
+      align-items: center; <br>
+      justify-content: space-around;</td>
+      <td>justify-content: space-around; flex-direction: row-reverse; flex-direction: row-reverse; align-items: center; justify-content: space-around;: Primero, los elementos se distribuyen uniformemente con espacios iguales alrededor de ellos. Luego, el orden de los elementos se invierte horizontalmente dos veces. Después, los elementos se alinean verticalmente en el centro del contenedor, y finalmente se distribuyen uniformemente con espacios iguales alrededor de ellos nuevamente.</td>
+    </tr>
+    <tr>
+        <td>10</td>
+      <td>justify-content: space-around;<br>
+      border: 1;<br>
+      justify-content: space-around;<br>
+      border: -1;</td>
+      <td>justify-content: space-around; order: 1; justify-content: space-around; order: -1;: Los elementos se distribuyen uniformemente con espacios iguales alrededor de ellos. Luego, un elemento específico se mueve hacia adelante en el orden de visualización, y luego otro elemento se mueve hacia atrás en el orden de visualización.</td>
+    </tr>
+    <tr>
+        <td>11</td>
+      <td>justify-content: space-between;<br>
+      align-self: flex-end;<br>
+      align-self: flex-end;</td>
+      <td>justify-content: space-between; align-self: flex-end; align-self: flex-end;: Los elementos se distribuyen uniformemente con el primer elemento al principio del contenedor y el último elemento al final del contenedor. Además, dos elementos específicos se alinean verticalmente en la parte inferior del contenedor.</td>
+    </tr>
+    <tr>
+        <td>12</td>
+      <td>justify-content: space-between;<br>
+      align-items: center;<br>
+      border: 1;<br>
+      align-self: center;<br>
+      align-self: center;<br>
+      align-self: flex-end;<br>
+      border: 1;</td>
+      <td>justify-content: space-between; align-items: center; order: 1; align-self: center; align-self: center; align-self: flex-end; order: 1;: Los elementos se distribuyen uniformemente con el primer elemento al principio del contenedor y el último elemento al final del contenedor. Además, se alinean verticalmente en el centro del contenedor y se ajustan dos elementos específicos en diferentes posiciones.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>FlexBox Froggy</h2>
+<table>
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Comando</th>
+        <th>Explicación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>justify-content: flex-end;</td>
+        <td>Alinea los elementos flexibles al final del contenedor a lo largo del eje principal.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>justify-content: center;</td>
+        <td>Alinea los elementos flexibles horizontalmente en el centro del contenedor.</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>justify-content: space-around;</td>
+        <td>Distribuye uniformemente los elementos con espacio igual alrededor de ellos.</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>justify-content: space-between;</td>
+        <td>Distribuye uniformemente los elementos con el primer elemento al principio del contenedor y el último al final del contenedor.</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>align-items: flex-end;</td>
+        <td>Alinea los elementos secundarios verticalmente en la parte inferior del contenedor.</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>align-items: center;<br>justify-content: center;</td>
+        <td>Alinea los elementos secundarios verticalmente y horizontalmente en el centro del contenedor.</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>justify-content: space-around;</td>
+        <td>Distribuye uniformemente los elementos con espacio igual alrededor de ellos.</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>flex-direction: row-reverse;</td>
+        <td>Reordena los elementos secundarios horizontalmente en el sentido opuesto al que estaban dispuestos inicialmente.</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>flex-direction: column;</td>
+        <td>Establece la dirección de los elementos secundarios como columnas.</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>flex-direction: row-reverse;<br>justify-content: flex-end;</td>
+        <td>Reordena los elementos secundarios horizontalmente en el sentido opuesto al que estaban dispuestos inicialmente y luego alinea los elementos al final del contenedor.</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>flex-direction: column;<br>justify-content: flex-end;</td>
+        <td>Establece la dirección de los elementos secundarios como columnas y luego los alinea horizontalmente al final del contenedor.</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>flex-direction: column-reverse;<br>justify-content: space-between;</td>
+        <td>Establece la dirección de los elementos secundarios como columnas en sentido inverso al que estaban dispuestos inicialmente y luego distribuye uniformemente los elementos.</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>flex-direction: row-reverse;<br>justify-content: center;<br>align-items: flex-end;</td>
+        <td>Reordena los elementos secundarios horizontalmente en el sentido opuesto al que estaban dispuestos inicialmente, luego los alinea horizontalmente en el centro del contenedor y verticalmente en la parte inferior del contenedor.</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>order: 1;</td>
+        <td>Cambia el orden de visualización de un elemento específico.</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>order: -3;</td>
+        <td>Cambia el orden de visualización de un elemento específico.</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>align-self: flex-end;</td>
+        <td>Alinea un elemento específico verticalmente en la parte inferior del contenedor.</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>align-self: flex-end;<br>order: 1;</td>
+        <td>Alinea un elemento específico verticalmente en la parte inferior del contenedor y cambia su orden de visualización.</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>flex-wrap: wrap;</td>
+        <td>Permite que los elementos flexibles se envuelvan en líneas adicionales si no caben en una sola línea.</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>flex-direction: column;<br>flex-wrap: wrap;</td>
+        <td>Establece la dirección de los elementos secundarios como columnas y permite que los elementos flexibles se envuelvan en líneas adicionales si no caben en una sola línea.</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>flex-flow: column wrap;</td>
+        <td>Establece la dirección de los elementos secundarios como columnas y permite que los elementos flexibles se envuelvan en líneas adicionales si no caben en una sola línea.</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>align-content: flex-start;</td>
+        <td>Alinea las líneas de elementos flexibles al principio del contenedor en la dirección del eje perpendicular.</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>align-content: flex-end;</td>
+        <td>Alinea las líneas de elementos flexibles al final del contenedor en la dirección del eje perpendicular.</td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>flex-direction: column-reverse;<br>align-content: center;</td>
+        <td>Establece la dirección de los elementos secundarios como columnas en sentido inverso al que estaban dispuestos inicialmente y luego alinea las líneas de elementos flexibles en el centro del contenedor en la dirección del eje perpendicular.</td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>flex-flow: column-reverse wrap-reverse;<br>justify-content: center;<br>align-content: space-between;</td>
+        <td>Establece la dirección de los elementos secundarios como columnas en sentido inverso al que estaban dispuestos inicialmente y permite que los elementos flexibles se envuelvan en líneas adicionales en sentido inverso si no caben en una sola línea. Luego, alinea los elementos horizontalmente en el centro del contenedor y distribuye uniformemente las líneas de elementos flexibles con el primer elemento al principio del contenedor y el último al final del contenedor en la dirección del eje perpendicular.</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
